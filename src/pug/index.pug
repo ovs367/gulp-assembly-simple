@@ -1,0 +1,19 @@
+extends layout/app
+
+block page 
+
+    include chunk/header 
+
+    h1.title Main page
+
+    //- picture
+    //-     source(srcset="img/dog.webp", type="image/webp")
+    //-     img(src="img/dog.jpg", alt="dog", width="500")
+    
+    img(src="img/aflower_2.png", alt="aflower", width="700")
+    ul.news
+        each item in news 
+            li= item.name
+
+    include chunk/footer
+    
